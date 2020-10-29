@@ -1,0 +1,282 @@
+Learn Command Shell
+Prepard by:shubham karamble
+Date:23 Oct 2020
+-----------------------------------
+01.start a command shell
+=cmd.exe
+
+02.Goto the root directory on C drive 
+=cd C:\
+
+03.create a new directory by name LearnCmdShell 
+=mkdir LearnCmdShell
+
+04.change the current working directly to learnCmdShell
+=cd LearnCmdShell
+
+05.start notepad.exe to craete 
+=notepad.exe
+
+06.save the file in c:\LearnCmdShell as
+=CommandShellNotes.txt
+
+07.on command shell give the following command
+=type CommandShellNotes.txt
+-----------------------------------
+  o
+   
+  o
+  A
+
+  o    o
+
+  o    o
+  A    B
+   
+   -----
+   ----->
+
+   o-----o
+  
+   o-----o
+   A     B
+
+   o---->o
+
+   o---->o
+   A     B
+ 
+   +-----+
+
+   +-----+
+   |     |
+   +-----+
+
+   Box
+   +-----+
+   |     |
+   +-----+
+
+    o
+    |-
+    /\
+    Human
+  
+     o
+   - |
+    /\
+    Human
+
+    o
+    |-
+    /\
+    User
+
+    o
+    |-
+    /\
+    End-user
+
+    +---------------+
+    |               |
+    |               |
+    |               |
+    |               |
+    +---------------+
+   /                 \
+  +-------------------+
+
+    o               o
+    |- ----------> -| 
+    /\		   /\	
+    
+   Ctrl+C =Press Ctrl Key and C key 
+           Copy
+   Ctrl+V =Paste
+   
+   Ctrl+X =Cut
+  
+   CCP=Cut,Copy,paste
+   
+    o               o
+    |- ----------> -| 
+    /\		   /\
+     A             B
+   Sender        Receiver
+     * Message
+    o               o
+    |- ----------> -| 
+    /\		   /\
+   Sender        Receiver
+
+    * Message
+    o               o
+    |- ----------> -| 
+    /\	channel	   /\
+   Sender        Receiver
+
+    +---------------+
+    |               |
+    |               |
+    |               |
+    +---------------+
+          
+    +---------------+
+    |       o       |
+    |      -|       |
+    |      /\       |
+ -->|               |-->
+    |               |
+    +---------------+
+
+    +---------------+
+    |        o      |
+ -->|       -|      |-->
+    |       /\      |
+    |    Processor  |
+    +---------------+
+
+    +---------------+
+    |        o      |
+ -->|       -|      |-->
+    |       /\      |
+    |   Evaluator   |
+    +---------------+
+
+    +---------------+
+    |        o      |
+ -->|       -|      |-->
+    |       /\      |
+    |   Function    |
+    +---------------+
+
+    o  command          +-------------+
+    |-   -------------->|command shell|
+    /\                  +-------------+
+   End-user
+
+    o  command          +--------------+
+    |-   -------------->|commandprocess|
+    /\                  +--------------+
+   End-user
+
+    o  command             o
+    |-   -------------->  -|
+    /\                    /\
+   End-user              commandprocess
+
+      o
+     -|
+     /\
+      A
+      o    o
+     -|   -|
+     /\   /\
+      A1  A2 
+
+  o    command       o
+  |-   ---------->  -|
+  /\   cd c:\       /\
+  End-user          Command shell
+                    cmd.exe
+                     |
+                     | c:\ command arguments
+                     |
+                     V
+                    o        o
+                   -|       -|
+                   /\       /\
+                   cd      mkdir
+               command 
+               name
+
+  o    command                    o
+  |-   ---------->               -|
+  /\   mkdir LearnCmdShell       /\
+  End-user                  Command shell
+                              cmd.exe
+                                 |
+                                 | LearnCmdShell
+                                 |command argument
+                                 V
+                        o        o
+                       -|       -|
+                       /\       /\
+                       cd      mkdir
+                     command 
+                       name
+
+command-name  comand-arguments
+<----------------------------->
+       command
+
+command-name  comand-parameters
+<----------------------------->
+       command
+
+command-name command-Arguments-1 command-argument-3....
+
+
+
+     o
+    -|
+    /\
+   cmd.exe
+
+     o  e o      o     o     o     o     o
+    -|  -|     -|    -|    -|    -|    -|
+    /\  /\     /\    /\    /\    /\    /\
+    cd  mkdir  cls  help   type  echo  set
+
+
+We will learn echo command
+
+echo A
+echo B
+echo A B
+echo Hi
+echo Hello
+echo echo
+echo "A"
+echo %
+echo %%
+     
+               o
+     A------->-|------->A
+              /\  
+              cmd.exe
+                 |
+                 o
+     %A%------->-|------->%A%
+                /\  
+              echo
+
+ set A=10
+
+   o    set A=10     o  A=10    o
+   |-  ------------>-| ------- -|
+   /\               /\         /\
+End-user            cmd.exe    set
+                    Envirnoment varaible tale
+                    +--------------+
+                    |name   |value |
+                    +--------------+  <----Envirnment varaible
+                    |   A   |  10  |
+                    +--------------+
+
+
+echo %A%
+
+   o    echo %A%     o  A=10    o
+   |-  ------------>-| ------- -|
+   /\               /\         /\
+End-user            cmd.exe    set
+                    Envirnoment varaible tale
+                     |  |
+                     |  | 
+                     V  
+                    +--------------+
+                    |name   |value |
+                    +--------------+  <----Envirnment varaible
+                    |   A   |  10  |
+                    +--------------+
